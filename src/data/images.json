@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "text": "text text text",
+            "link": "http://placeimg.com/640/360/any"
+        },
+        {
+            "text": "text text text",
+            "link": "http://placeimg.com/640/360/animals"
+        },
+        {
+            "text": "text text text",
+            "link": "http://placeimg.com/640/360/people"
+        },
+        {
+            "text": "text text text",
+            "link": "http://placeimg.com/640/360/tech"
+        }
+    ]
+}
