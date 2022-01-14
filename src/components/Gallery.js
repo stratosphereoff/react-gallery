@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-//import data from "../data/images.json"
 import Modal from "./Modal";
+
+import { Flex } from '@chakra-ui/react'
 
 import img1 from '../img/img1.jpg'
 import img2 from '../img/img2.jpg'
@@ -182,7 +183,7 @@ function Gallery() {
   };
 
   return (
-    <div className="wrapper">
+    <Flex as="wrapper">
       {data.map((item, index) => (
         <div key={index} className="wrapper-images">
             <img src={item.imgSrc} alt={item.text} onClick={() => handleClick(item, index)}/>
@@ -197,7 +198,7 @@ function Gallery() {
         handleRotationLeft={handleRotationLeft}
       />        
       )}
-    </div>
+    </Flex>
   );
 }
 

@@ -1,3 +1,5 @@
+import { Box, Container, Flex, Text, Heading } from '@chakra-ui/react'
+
 const Modal = ({
     clickedImage,
     setClickedImage,
@@ -17,6 +19,7 @@ const Modal = ({
           <span className="dismiss" onClick={handleClick}>
             X
           </span>
+
           <div onClick={handleRotationLeft} className="overlay-arrows_left">
             <div>
               <svg
@@ -33,6 +36,7 @@ const Modal = ({
               </svg>
             </div>
           </div>
+
           <div onClick={handleRotationRight} className="overlay-arrows_right">
             <div>
               <svg
@@ -49,6 +53,7 @@ const Modal = ({
               </svg>
             </div>
           </div>
+
         </div>
       </>
     );
