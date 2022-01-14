@@ -1,4 +1,4 @@
-import { Box, Flex, Stack, Button, Text } from '@chakra-ui/react'
+import { Flex, Button, Text } from '@chakra-ui/react'
 
 const Calendar = () => {
 
@@ -17,8 +17,7 @@ const Calendar = () => {
         {name: 'December', days: 31}
     ];
 
-    const dates = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
-
+    const coolDatesArray = Array.from({length: 31}, (_, i) => i + 1);
 
     return (
         <Flex  direction={'column'} pt={50} pb='150px'>
@@ -28,7 +27,7 @@ const Calendar = () => {
                         <Text>{month.name}</Text>
                     </Flex>
                     <Flex justify='center' pt='15px'>
-                    {dates.slice(0, month.days).map(date => <Button m={1} background='none' key={date} width='12px'>{date}</Button>)}
+                    {coolDatesArray.slice(0, month.days).map(date => <Button m={1} background='none' key={date} width='12px'>{date}</Button>)}
                     </Flex>
                 </Flex>
             )}
