@@ -1,6 +1,4 @@
-import { Flex, Button, Text } from '@chakra-ui/react'
-import { useDisclosure } from '@chakra-ui/react'
-
+import { Flex, Button, Text, Container } from '@chakra-ui/react'
 
 const Calendar = () => {
 
@@ -28,14 +26,9 @@ const Calendar = () => {
                     <Flex fontSize='2em' fontFamily='Inconsolata' justify='center'>
                         <Text>{month.name}</Text>
                     </Flex>
-                    <Flex justify='center' pt='15px'>
-                    {coolDatesArray.slice(0, month.days).map(date =>
-                    <> 
-                    <Button m={1} background='none' key={date} width='12px'>{date}
-                    </Button>
-                    </>
-                    )}
-                    </Flex>
+                    <Container maxW='container.lg' justify='center' pt='15px'>
+                        {coolDatesArray.slice(0, month.days).map(date => <Button m={1} background='none' key={date} width='12px'>{date}</Button>)}
+                    </Container>
                 </Flex>
             )}
         </Flex>
