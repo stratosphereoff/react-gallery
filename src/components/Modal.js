@@ -1,5 +1,3 @@
-import { Box, Container, Flex, Text, Heading } from '@chakra-ui/react'
-
 const Modal = ({
     clickedImage,
     setClickedImage,
